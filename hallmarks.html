@@ -1,0 +1,132 @@
+<html>
+<head>
+	<style>
+		body{
+			font-family: helvetica;
+			background: #f2f2f2;
+		}
+		h1{
+			padding: 20px 0 50px 0;
+		}
+		.tooltip {
+
+			width: 300px;
+		}
+		.tooltip p {
+			font-size: 0.9em;
+		}
+
+		.wrap {
+			position:relative;
+			width: 100%;
+			margin: auto;
+			max-width:600px;
+			background: blue;
+			z-index:0;
+
+		}
+
+		.hallmark {
+			width: 100%;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:-3;
+		}
+
+		#infoCoin-1 {
+			top: 5px;
+			left: 12px;
+		}
+
+		#infoCoin-2 {
+			top: 24px;
+			left: 10px;
+		}
+
+		#infoCoin-3 {
+			top: 12%;
+			left: 2%;		
+		}
+
+
+		.infoCoin{
+			z-index:1;
+			position:relative;
+			height:30px;
+			animation-delay: 2s;
+			-webkit-animation: coinTurn 3s infinite linear;
+			-webkit-transform-origin: center center;
+			-webkit-animation-delay: 2s; /* Safari and Chrome */
+			-webkit-transition: 1s all;
+			-moz-transition: 1s all;
+			transition: 1s all;
+		}
+
+
+		@-webkit-keyframes coinPusle {
+			0%   { -webkit-transform: scale(1);  }
+			50%  { -webkit-transform: scale(0.8); }
+			100% { -webkit-transform: scale(1);  }
+		}
+		@-webkit-keyframes coinTurn {
+			0%   { -webkit-transform: rotate(20deg);  }
+			100% { -webkit-transform: rotate(-340deg); }
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Hallmark&mdash;Demo</h1>
+	<div class="wrap">
+
+		<a href="#"><img src="img/plus.svg" class="infoCoin" id="infoCoin-1" /></a>
+		<img src="img/plus.svg" class="infoCoin" id="infoCoin-2" />
+		<img src="img/plus.svg" class="infoCoin" id="infoCoin-3" />
+		<img src="hammerstein_hallmark_3.jpg" class="hallmark" />
+	<!-- 	
+		<img src="img/plus.svg" class="infoCoin" id="infoCoin-4" />
+		<img src="img/plus.svg" class="infoCoin" id="infoCoin-5" />
+		<img src="img/plus.svg" class="infoCoin" id="infoCoin-6" />
+		<img src="img/plus.svg" class="infoCoin" id="infoCoin-7" /> 
+	-->
+	<!-- <img src="hammerstein_hallmark_2.jpg" /> -->
+</div>
+<!-- 
+<div class="tooltip">
+	<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime</p>
+</div> 
+-->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+-->
+<script src="js/jquery.min.js"></script>
+
+<script>
+
+	$(document).ready(function(){
+
+		// var wrapWidth;
+
+	 	// var iconWidth = parseInt(wrapWidth);
+	 	// var iconWidth = parseInt(wrapWidth , 10);
+
+		// $( window ).resize(function() {
+
+		// wrapWidth = ($('.wrap').css('width'));
+
+		// console.log(wrapWidth);
+		// console.log(iconWidth);
+
+		// $('.infoCoin').css('width', iconWidth);
+
+		// });
+
+
+});
+
+</script>
+
+
+</body>
+</html
